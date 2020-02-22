@@ -5,6 +5,13 @@
 
 trigger:
 - master
+- task: AzureRmWebAppDeployment@4
+  inputs:
+    ConnectionType: 'AzureRM'
+    azureSubscription: 'Azure subscription 1(9651abbd-00b3-41aa-bf49-1f0ab63f8467)'
+    appType: 'webApp'
+    WebAppName: 'HangmanTest'
+    packageForLinux: '$(System.DefaultWorkingDirectory)/dist/hang'
 
 pool:
   vmImage: 'ubuntu-latest'
