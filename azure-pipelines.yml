@@ -11,7 +11,7 @@ trigger:
     azureSubscription: 'Azure subscription 1(9651abbd-00b3-41aa-bf49-1f0ab63f8467)'
     appType: 'webApp'
     WebAppName: 'HangmanTest'
-    packageForLinux: '$(System.DefaultWorkingDirectory)/dist/hangman-tdd'
+    packageForLinux: '$(System.DefaultWorkingDirectory)/dist/hangman-tdd/'
 
 pool:
   vmImage: 'ubuntu-latest'
